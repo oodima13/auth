@@ -1,7 +1,6 @@
 <?php
-function isUserAuthorized(): bool 
+function isUserAuthorized(): bool
 {
-
     return isset($_SESSION['user_id']);
 }
 
@@ -17,4 +16,3 @@ function getUserByLogin(string $login): array
     $users =  $ret->fetchAll();
     return $users[0] ?? [];
 }
-
