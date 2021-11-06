@@ -17,3 +17,6 @@ if (!empty($_GET['authorized'])) {
     echo 'You just successfully authorized';
 }
 
+include "postForm.php";
+echo '<br><br><br>';
+include "blog.php";
